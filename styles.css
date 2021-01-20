@@ -1,0 +1,39 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.dino{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background-image: url(./Assets/img/dino.png) ;
+
+}
+.cactus{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(./Assets/img/cactus.png) ;
+}
+
+@keyframes sliderRight{
+  from {
+    background-position: 70000%;
+  }
+  to{
+    background-position: 0;
+  }
+}
+background{
+  position: absolute;
+  bottom: 0px;
+  background-image: url(./Assets/img/background.png) ;
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
